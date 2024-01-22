@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+# Change working directory to user's home directory
+cd "${HOME}"
+
+# Reset module environment (may require login shell for some HPC clusters)
+module purge && module restore
+
+# Ensure that the user's configured login shell is used
+export SHELL="$(getent passwd $USER | cut -d: -f7)"
+
+# Start up desktop
+# Launch Mate Window Manager and Panel
+marco --no-composite --no-force-fullscreen --sm-disable &
+
+cd /scratch/c.sistg1/mumax3
+
+firefox http://localhost:$mumax_port
+
+echo "Desktop ended..."

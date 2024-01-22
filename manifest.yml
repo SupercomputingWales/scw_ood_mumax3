@@ -1,0 +1,9 @@
+---
+name: Mumax3
+category: Physics
+subcategory: Servers
+role: batch_connect
+description: |
+  This app will launch [Mumax3] web server to manage jobs.
+
+  [Mumax3]: https://mumax.github.io
