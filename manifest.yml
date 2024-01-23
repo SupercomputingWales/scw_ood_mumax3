@@ -1,7 +1,7 @@
 ---
 name: Mumax3
-category: Physics
-subcategory: Servers
+category: Interactive Apps
+subcategory: Physics
 role: batch_connect
 description: |
   This app will launch [Mumax3] web server to manage jobs.
